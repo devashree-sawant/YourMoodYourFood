@@ -1,0 +1,88 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fffaf5;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.mood-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.mood-btn {
+  font-size: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background-color: #ffb347;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.mood-btn:hover {
+  .result-text {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #444;
+  border-right: 2px solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+  transform: scale(1.1);
+  background-color: #ffa534;
+}
+.result-text {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #444;
+  border-right: 2px solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
